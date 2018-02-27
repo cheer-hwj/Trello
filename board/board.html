@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>newBoard | Trello</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../common/header/header.css">
+    <link rel="stylesheet" type="text/css" href="../common/createBoard/createBoard.css">
+    <link rel="stylesheet" type="text/css" href="board.css">
+</head>
+<body>
+<header id="header"></header>
+<div id="headerBoard">
+    <div id="searchPanel" hidden>
+        Saved Searches
+        My Cards @me
+    </div>
+    <div id="createPanel" hidden>
+        create
+    </div>
+    <div id="infoPanel" hidden>
+        information
+    </div>
+    <div id="notiPanel" hidden>
+        notifications
+    </div>
+    <div id="userPanel" hidden>
+        cheer
+    </div>
+</div>
+<main>
+    <div class="content-header">
+        <h2>side project</h2>
+        <button class="star-btn"></button>
+        <div class="team-info">
+            <span>Personal</span>
+            <span>Private</span>
+            <div><label id="menuBtn">··· Show Menu</label></div>
+        </div>
+        <div id="renameBoard" hidden>
+            <h3>Rename Board</h3>
+            <button class="close-re">X</button>
+            <h4>Name</h4>
+            <input type="text">
+            <button class="rename-btn">Rename</button>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="content"></div>
+    </div>
+</main>
+<div class="overlay newone-overlay"><div></div></div>
+<script type="text/javascript" src="../common/createBoard/createBoard.js"></script>
+<script type="text/javascript" src="../common/header/header.js"></script>
+<script type="text/javascript" src="board.js"></script>
+</body>
+</html>

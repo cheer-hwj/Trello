@@ -1,0 +1,96 @@
+#header {
+    background: #136caa;
+}
+main {
+    margin: 5rem auto auto auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+section {
+    margin: 1rem;
+}
+section h3 {
+    text-transform: capitalize;
+    padding-left: 3rem;
+    background: url("common/img/star-gray.png") no-repeat .5rem center/contain;
+}
+section ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+section li {
+    position: relative;
+    flex-basis: 23%;
+    list-style-type: none;
+    margin: 1rem .5rem;
+    border-radius: 3px;
+    cursor: pointer;
+    user-select: none;
+    background: #ff9999;
+    min-width: 200px;
+    height: 7rem;
+    background: no-repeat center/cover;
+}
+section li .fade {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .2);
+}
+section li:hover:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .1);
+}
+
+section li p {
+    position: relative;
+    padding: 1rem;
+    color: #fff;
+    height: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+section li button {
+    position: absolute;
+    right: 1rem;
+    width: 1rem;
+    height: 1.5rem;
+    background: url('common/img/star-yellow.png') center/contain no-repeat;
+    opacity: 1;
+    transition-duration: .5s;
+}
+section li.unstarred button {
+    right: -1rem;
+    background-image: url('common/img/star-white.png');
+    opacity: 0.6;
+}
+
+section li.unstarred:hover button {
+    right: 1rem;
+}
+section li button:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+section li.add {
+    background: #eee;
+    color: #888;
+    font-weight: bold;
+    text-align: center;
+    line-height: 7rem;
+}
+
+
+@media only screen and (max-width: 750px) {
+    section li {
+        flex-basis: 100%;
+    }
+}
